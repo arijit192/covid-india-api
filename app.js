@@ -14,4 +14,4 @@ const app = express();
   });
 })();
 
-app.listen(8080,()=>{console.log("API Server is running :)")});
+app.listen(process.env.PORT || 2000,()=>{console.log("API Server is running :)")});
