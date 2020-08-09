@@ -14,4 +14,4 @@ const app = express();
   });
 })();
 
-app.listen(8080);
+app.listen(8080,()=>{console.log("API Server is running :)")});
