@@ -2,6 +2,7 @@ var express = require("express");
 var PS = require("./process_site");
 
 const app = express();
+const port = 2000;
 
 (async function sendData() {
   const total = await PS.FetchTotal();
@@ -14,4 +15,4 @@ const app = express();
   });
 })();
 
-app.listen(process.env.PORT || 2000,()=>{console.log("API Server is running :)")});
+app.listen(process.env.PORT || 2000,()=>{console.log("API Server is running at "+port+" :)")});
