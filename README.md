@@ -6,6 +6,6 @@ The source of this data is directly from the website of Indian Govt(https://www.
 
 This api is also live and hosted on heroku. You can have a look.
 
-To get overall data of india send a get request to https://covid-india-api-arijit192.herokuapp.com/total and to get data statewise it will be https://covid-india-api-arijit192.herokuapp.com/statewise
+To get overall data of india send a get request to http://api.covidtrackerindia.tk/total and to get data statewise it will be http://api.covidtrackerindia.tk/statewise
 
 The Python version of this API is also available on my github. Link: https://github.com/arijit192/Covid-19-api
