@@ -1,14 +1,12 @@
 {
   "name": "covid-india-api",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Arijit Roy",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
