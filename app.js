@@ -15,4 +15,21 @@ const port = 2000;
   });
 })();
 
+//MIDDLEWARE
+app.use((req, res, next) => {
+  const error = new Error("Bad Request");
+  error.status = 404;
+  next(error);
+});
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.json({
+    error: {
+      message: error.message,
+    },
+  });
+});
+
+
+
 app.listen(process.env.PORT || 2000,()=>{console.log("API Server is running at "+port+" :)")});
